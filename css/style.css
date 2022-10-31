@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url(../fonts/stylesheet.css);
+
+:root {
+	--text-color: #111111;
+	--color-primary: #ed5470;
+	--primary-gradient: linear-gradient(90deg, #e78496 0%, #da3d5a 100%);
+	--main-bg-color: #f2f2f2;
+	--border-color: #f5f1ed;
+
+	--unit: 1rem;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: var(--unit);
+	background: #fff;
+	overflow-x: hidden;
+}
+
+.slogan {
+	font-size: calc(1.375 * var(--unit));
+	margin-bottom: 40px;
+}
+
+.title {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(4.5 * var(--unit));
+	margin-bottom: 6px;
+}
+
+.subtitle {
+	font-weight: 700;
+	font-size: calc(1.5 * var(--unit));
+	margin-bottom: 18px;
+}
+
+.main .text {
+	margin-bottom: 28px;
+}
+
+.button {
+	height: 100px;
+	background: var(--primary-gradient);
+	color: #fff;
+	font-weight: 700;
+	font-size: calc(1.25 * var(--unit));
+	border: none;
+	border-radius: 16px;
+	border: 1px solid rgba(254, 163, 180, 0.6);
+	box-shadow: 0px 20px 30px rgba(218, 61, 90, 0.5);
+	padding: 0 70px;
+	font-family: 'Montserrat';
+	cursor: pointer;
+	margin-top: 34px;
+}
+
+.main {
+	/* background: #eee; */
+	background: center center url("../img/bg_main.jpg") no-repeat;
+	position: relative;
+   overflow: hidden;
+}
+
+.main .container {
+	display: block;
+	height: 98vh;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 70px 0;
+}
+
+.main .container__item {
+	width: 50%;
+	float: left;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.box {
+	color: #85796e;
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(239, 236, 236, 0.2);
+   border-radius: 32px;
+	backdrop-filter: blur(11.9554px);
+	text-align: center;
+	padding: 24px;
+	width: 270px;
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+}
+
+.box .h3 {
+	margin-bottom: 12px;
+}
+
+.box strong {
+	display: inline-block;
+	margin-bottom: 4px;
+}
+
+.features {
+	margin-bottom: 34px;
+	display: block;
+	position: relative;
+	z-index: 10;
+}
+
+.features__item {
+	width: 180px;
+	float: left;
+}
+
+.features__item .image {
+	background-color: #fff;
+	border-radius: 100px;
+	padding: 13px;
+   padding-top: 14px;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+	margin-bottom: 14px;
+}
+
+.features__item .image img {
+	height: 54px;
+	width: 54px;
+}
+
+.image-fern {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100px;
+	z-index: 2;
+}
+
+.image-1 {
+	height: 700px;
+   height: 28vw;
+	/* height: calc(10 * var(--unit)); */
+	margin-top: 12vh;
+}
+
+.image-2 {
+   height: 923px;
+   height: 28vw;
+	left: auto;
+	right: 0;
+}
+
+/* aside */
+.aside {
+	padding: 100px 0;
+}
+
+.aside .container__text {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.h2 {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(4 * var(--unit));
+	margin-bottom: 16px;
+	line-height: 100%;
+}
+
+.h2 .mark {
+	color: var(--color-primary);
+}
+
+.aside .container__text .desc {
+	width: 800px;
+	margin: 0 auto 26px;
+}
+
+.courses {
+	width: 1240px;
+	margin: 0 auto;
+	display: block;
+}
+
+.courses__item {
+	display: inline-block;
+	background-color: var(--border-color);
+	width: 280px;
+	margin: 0 13px 26px;
+	border-radius: 16px;
+	overflow: hidden;
+	height: 800px;
+   position: relative;
+}
+
+.lessons {
+   position: absolute;
+   bottom: 22px;
+   left: 22px;
+}
+
+.courses__item .image {
+	width: 100%;
+	height: 180px;
+}
+
+.courses__item .image img {
+	height: 100%;
+	width: 100%;
+}
+
+.courses__item .text {
+	padding: 22px;
+	padding-top: 18px;
+}
+
+.courses__item .text .item__number {
+	color: var(--color-primary);
+	font-size: calc(3.25 * var(--unit));
+	font-family: 'Bebas Neue', sans-serif;
+}
+
+.h3 {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(2.0625 * var(--unit));
+	line-height: 100%;
+}
+
+.price-old {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(1.75 * var(--unit));
+	color: #939393;
+	text-decoration: line-through;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+.price {
+	display: inline-block;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(2.25 * var(--unit));
+	color: #fff;
+	background-color: var(--color-primary);
+	display: inline-block;
+	padding: 3px 13px 0;
+	margin: 12px 0;
+}
+
+.price::after {
+	content: ' ₽';
+	font-size: calc(2 * var(--unit));
+	display: inline;
+}
+
+.price-old::after {
+	content: ' ₽';
+	display: inline;
+}
+
+.courses__item .text .desc {
+	font-size: calc(0.875 * var(--unit));
+	line-height: 140%;
+	margin-bottom: 16px;
+	height: 100%;
+}
+
+/* footer */
+.footer .container {
+	padding: 100px 0 80px;
+}
+
+.footer .subtitle {
+	margin-bottom: 28px;
+}
+
+.footer .container__text {
+	text-align: center;
+}
+
+.special-price {
+	margin: 12px 0 32px 0;
+}
+
+.buy-course {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.buy-course__desc {
+	background-color: #f8f8f8;
+	border-radius: 32px;
+	padding: 40px;
+	margin-bottom: 28px;
+}
+
+.buy-course__desc .image {
+	height: 69px;
+	width: 69px;
+	margin: 0 auto 20px;
+}
+
+.buy-course__desc .image img {
+	height: 100%;
+	width: 100%;
+}
+
+.h4 {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: calc(2.5 * var(--unit));
+}
+
+.buy-course__desc .desc {
+	font-size: 18px;
+	color: #747474;
+}
+
+.buy-course .input {
+	width: 100%;
+	height: 72px;
+	text-align: center;
+	vertical-align: middle;
+	margin-bottom: 16px;
+	border: none;
+	border-radius: 16px;
+	background-color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(1.125 * var(--unit));
+}
+
+.strike-text {
+	position: relative;
+}
+.strike-text::after {
+	content: '';
+	position: absolute;
+	top: 45%;
+	left: 0;
+	margin-top: -1.5px;
+	display: block;
+	width: 100%;
+	height: 3px;
+	background-color: var(--color-primary);
+}
